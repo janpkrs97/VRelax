@@ -134,8 +134,9 @@ GameObject:
   - component: {fileID: 138954637}
   - component: {fileID: 138954636}
   - component: {fileID: 138954638}
+  - component: {fileID: 138954639}
   m_Layer: 0
-  m_Name: Gyro Control
+  m_Name: CameraManager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -180,6 +181,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 52b92ed21b995dc4e92b438bb500049c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &138954639
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 138954635}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 45e0648cf26d72244b1005628f81c0ca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cameraObj: {fileID: 834863218}
+  myGameObj: {fileID: 138954635}
+  speed: 5
 --- !u!1 &525899524
 GameObject:
   m_ObjectHideFlags: 0
@@ -888,10 +904,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
+  m_ReferenceResolution: {x: 2436, y: 1125}
   m_ScreenMatchMode: 0
   m_MatchWidthOrHeight: 0
   m_PhysicalUnit: 3
@@ -1036,6 +1052,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6203e928ec7aa2646950be991c2e765c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  guidedPressed: 0
 --- !u!850595691 &1050291321
 LightingSettings:
   m_ObjectHideFlags: 0
